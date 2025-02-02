@@ -1,0 +1,25 @@
+meta {
+  name: Create
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/tables/{{GuestTable}}/records
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "FirstName": "Gustavo",
+    "LastName": "Santamaría",
+    "Email": "tavobajares@gmail.com",
+    "Phone": "+573002383905",
+    "AgeGroup": "Adulto",
+    "Allergies": "",
+    "VeganMeal": false,
+    "Confirmed": false,
+    "FamilyGroup": 1
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Patch
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{url}}/tables/{{GuestTable}}/records
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Id": 3,
+    "Allergies": "",
+    "VeganMeal": false,
+    "Confirmed": true
+  }
+}

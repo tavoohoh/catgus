@@ -1,0 +1,17 @@
+meta {
+  name: List
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/tables/{{GuestTable}}/records?offset=0&limit=25&where
+  body: none
+  auth: none
+}
+
+params:query {
+  offset: 0
+  limit: 25
+  where: 
+}
