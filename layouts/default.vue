@@ -24,10 +24,11 @@ import FooterContainer from "~/componentes/footer-container.vue";
 <style scoped lang="css">
 .layout-default {
   background-color: var(--neutral-dark);
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr;
   padding: 24px;
+  height: 100vh;
+  height: 100dvh;
 
   .layout-default-content {
     display: grid;
