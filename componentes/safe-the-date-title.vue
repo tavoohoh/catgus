@@ -20,6 +20,7 @@
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    color: var(--text);
 
     span {
       display: block;

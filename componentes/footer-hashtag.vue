@@ -14,5 +14,6 @@
 <style scoped lang="css">
 .footer-hashtag {
   text-align: center;
+  font-size: 1rem;
 }
 </style>

@@ -52,5 +52,6 @@ onUnmounted(() => {
 <style scoped lang="css">
 .footer-count-down {
   text-align: center;
+  font-size: 1rem;
 }
 </style>

@@ -1,16 +1,18 @@
 <template>
   <div class="layout-default">
-    <header>
+    <div class="layout-default-content">
+      <header>
 
-    </header>
+      </header>
 
-    <main>
-      <slot />
-    </main>
+      <main>
+        <slot />
+      </main>
 
-    <footer>
-      <footer-container />
-    </footer>
+      <footer>
+        <footer-container />
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -21,14 +23,29 @@ import FooterContainer from "~/componentes/footer-container.vue";
 
 <style scoped lang="css">
 .layout-default {
-  display: grid;
-  grid-template-rows: auto 1fr min-content;
+  background-color: var(--neutral-dark);
   height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 24px;
 
-  header {}
+  .layout-default-content {
+    display: grid;
+    grid-template-rows: auto 1fr min-content;
+    height: 100%;
+    max-width: 512px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--primary);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
 
-  main {}
+    header {}
 
-  footer {}
+    main {}
+
+    footer {}
+  }
 }
 </style>
