@@ -1,0 +1,1 @@
+import{u as s,c as a,a as o,t as n,e as r,o as l}from"./BNWFdyYd.js";import{_ as p}from"./DlAUqK2U.js";const u={__name:"todo",setup(c){const{$t:e}=s();return(_,t)=>(l(),a("div",null,[o("h2",null,n(r(e)("title.todo")),1),t[0]||(t[0]=o("p",null,null,-1))]))}},m=p(u,[["__scopeId","data-v-3023c34b"]]);export{m as default};

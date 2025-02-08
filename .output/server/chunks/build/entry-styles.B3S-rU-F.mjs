@@ -1,0 +1,6 @@
+const global = '@import"https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap";:root{--primary:#eee;--accent:#f1ccb7;--secondary:#e6d6bd;--neutral-light:#c3c9b1;--neutral-dark:#a4aa94;--text:#606554;--text-dark:#232323}*{box-sizing:border-box}body{box-sizing:border-box;font-family:"Roboto Serif",serif;font-optical-sizing:auto;font-size:16px;font-style:normal;font-variation-settings:"wdth" 100;margin:0;padding:0}h1,h2,h3,h4,h5,h6{color:var(--text-dark);font-optical-sizing:auto;font-style:normal;font-variation-settings:"wdth" 100}h1{font-family:Bodoni Moda SC,serif;font-optical-sizing:auto;font-size:2.5rem;font-style:normal;margin:2rem 0;text-transform:uppercase}h1,h2{font-weight:400}h2{font-optical-sizing:auto;font-size:2.2rem;font-style:normal;text-align:center}h2,h3{font-family:Bodoni Moda,serif;margin-bottom:1rem}h3{font-optical-sizing:auto;font-size:1.8rem;font-style:normal;font-weight:400}@media screen and (max-width:768px){h1{font-size:2rem}h2{font-size:1.8rem}}';
+
+const entryStyles_B3SRUF = [global];
+
+export { entryStyles_B3SRUF as default };
+//# sourceMappingURL=entry-styles.B3S-rU-F.mjs.map

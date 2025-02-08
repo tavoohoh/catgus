@@ -1,0 +1,1 @@
+import{u as s,c as o,a,t as n,e as r,o as l}from"./BNWFdyYd.js";import{_ as p}from"./DlAUqK2U.js";const u={__name:"faq",setup(c){const{$t:e}=s();return(_,t)=>(l(),o("div",null,[a("h2",null,n(r(e)("title.faq")),1),t[0]||(t[0]=a("p",null,null,-1))]))}},m=p(u,[["__scopeId","data-v-3c9247a9"]]);export{m as default};

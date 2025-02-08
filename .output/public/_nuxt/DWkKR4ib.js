@@ -1,0 +1,1 @@
+import{u as a,c as o,a as s,t as n,e as r,o as l}from"./BNWFdyYd.js";import{_ as p}from"./DlAUqK2U.js";const u={__name:"gifts",setup(c){const{$t:e}=a();return(_,t)=>(l(),o("div",null,[s("h2",null,n(r(e)("title.gift")),1),t[0]||(t[0]=s("p",null,null,-1))]))}},m=p(u,[["__scopeId","data-v-6c7a1719"]]);export{m as default};

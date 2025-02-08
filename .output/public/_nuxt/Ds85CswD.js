@@ -1,0 +1,1 @@
+import{u as o,c as r,a as s,t as a,e as n,o as l}from"./BNWFdyYd.js";import{_ as p}from"./DlAUqK2U.js";const u={__name:"dress-code",setup(c){const{$t:t}=o();return(_,e)=>(l(),r("div",null,[s("h2",null,a(n(t)("title.dress")),1),e[0]||(e[0]=s("p",null,null,-1))]))}},i=p(u,[["__scopeId","data-v-702f7848"]]);export{i as default};

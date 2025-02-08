@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
+
   routeRules: {
     // prerender index route by default
     '/': { prerender: true },
