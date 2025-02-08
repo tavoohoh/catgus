@@ -1,1 +1,0 @@
-import{u as a,c as l,a as t,t as o,e as n,o as r}from"./BNWFdyYd.js";import{_ as u}from"./DlAUqK2U.js";const c={__name:"schedule",setup(p){const{$t:s}=a();return(_,e)=>(r(),l("div",null,[t("h2",null,o(n(s)("title.schedule")),1),e[0]||(e[0]=t("p",null,null,-1))]))}},i=u(c,[["__scopeId","data-v-4f9d9845"]]);export{i as default};

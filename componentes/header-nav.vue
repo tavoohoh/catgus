@@ -72,7 +72,7 @@ const navItems = [
 .header-nav {
   display: flex;
   justify-content: space-between;
-  max-width: 900px;
+  max-width: 1024px;
   margin: 0 auto;
 
   * {
