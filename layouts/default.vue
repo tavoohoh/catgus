@@ -1,52 +1,35 @@
 <template>
   <div class="layout-default">
-    <div class="layout-default-content">
-      <header>
+    <header-container />
 
-      </header>
+    <main>
+      <slot />
+    </main>
 
-      <main>
-        <slot />
-      </main>
-
-      <footer>
-        <footer-container />
-      </footer>
-    </div>
+    <footer-container />
   </div>
 </template>
 
 <script setup>
 import FooterContainer from "~/componentes/footer-container.vue";
+import HeaderContainer from "~/componentes/header-container.vue";
 
 </script>
 
 <style scoped lang="css">
 .layout-default {
-  background-color: var(--neutral-dark);
   display: grid;
-  grid-template-rows: 1fr;
-  padding: 24px;
+  grid-template-rows: auto 1fr min-content;
+  margin: 0 auto;
+  background-color: var(--primary);
   height: 100vh;
   height: 100dvh;
 
-  .layout-default-content {
-    display: grid;
-    grid-template-rows: auto 1fr min-content;
-    height: 100%;
-    max-width: 512px;
-    width: 100%;
+  main {
+    max-width: 900px;
     margin: 0 auto;
-    background-color: var(--primary);
-    border-radius: 24px;
-    padding: 24px;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
-
-    header {}
-
-    main {}
-
-    footer {}
+    padding: 1rem;
+    width: 100%;
   }
 }
 </style>

@@ -15,5 +15,7 @@
 .footer-hashtag {
   text-align: center;
   font-size: 1rem;
+  margin: 0;
+  display: inline;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ $t('title.faq') }}</h2>
+    <h2>{{ $t('title.crew') }}</h2>
     <p></p>
   </div>
 </template>

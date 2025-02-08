@@ -12,5 +12,8 @@ import FooterHashtag from "~/componentes/footer-hashtag.vue";
 </script>
 
 <style scoped lang="css">
-.footer-container {}
+.footer-container {
+  padding: 1rem;
+  text-align: center;
+}
 </style>

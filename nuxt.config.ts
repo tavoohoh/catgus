@@ -45,5 +45,6 @@ export default defineNuxtConfig({
     public: {
       apiBase: '/api'
     }
-  }
-});
+  },
+
+} as any);
