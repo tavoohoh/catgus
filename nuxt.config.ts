@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   routeRules: {
-    '/': { prerender: false },
+    // prerender index route by default
+    '/': { prerender: true },
   },
 
   compatibilityDate: '2025-02-02',
@@ -46,4 +47,4 @@ export default defineNuxtConfig({
     }
   },
 
-});
+} as any);
