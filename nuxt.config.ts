@@ -3,14 +3,19 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   nitro: {
+    preset: 'vercel',
     prerender: {
-      routes: ['/']
+      routes: [
+        '/',
+        '/about',
+        '/crew',
+        '/dress-code',
+        '/faq',
+        '/gifts',
+        '/schedule',
+        '/todo',
+      ]
     }
-  },
-
-  routeRules: {
-    // prerender index route by default
-    '/': { prerender: true },
   },
 
   compatibilityDate: '2025-02-02',
