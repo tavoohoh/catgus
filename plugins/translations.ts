@@ -50,8 +50,7 @@ const translations: Translations = {
 }
 
 export default defineNuxtPlugin(() => {
-  // let currentLang: keyof Translations = navigator?.language.split('-')[0] as keyof Translations || 'es';
-  let currentLang: string = 'es';
+  let currentLang: keyof Translations = navigator?.language.split('-')[0] as keyof Translations || 'es';
   let currentTranslations = translations[currentLang];
 
   const t = (key: string): string => {
