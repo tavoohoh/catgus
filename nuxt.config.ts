@@ -2,9 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  nitro: {
+    prerender: {
+      debug: true,
+    },
+  },
+
   routeRules: {
-    // prerender index route by default
-    '/': { prerender: true },
+    '/': { prerender: false },
   },
 
   compatibilityDate: '2025-02-02',
