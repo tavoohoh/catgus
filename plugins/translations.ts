@@ -22,7 +22,14 @@ const translations: Translations = {
       date: 'February 20, 2026',
       location: 'Subachoque, Colombia',
     },
-    default: {
+    global: {
+      timer: {
+        finished: 'Thank you all!',
+        seconds: 'Only {seconds} seconds left!',
+        minutes: 'Only {minutes} minutes and {seconds} seconds left!',
+        hours: 'Only {hours} hours, {minutes} minutes and {seconds} seconds left!',
+        days: 'Only {days} days, {hours} hours, {minutes} minutes and {seconds} seconds left!'
+      },
       empty: 'We are working on this section. It will be available soon.',
     }
   },
@@ -43,7 +50,14 @@ const translations: Translations = {
       date: 'Febrero 20, 2026',
       location: 'Subachoque, Cundinamarca',
     },
-    default: {
+    global: {
+      timer: {
+        finished: '¡Gracias a todos!',
+        seconds: '¡Faltan {seconds} segundos!',
+        minutes: '¡Faltan {minutes} minutos y {seconds} segundos!',
+        hours: '¡Faltan {hours} horas, {minutes} minutos y {seconds} segundos!',
+        days: 'Faltan {days} días, {hours} horas, {minutes} minutos y {seconds} segundos'
+      },
       empty: 'Estamos trabajando en esta sección. Pronto estará disponible.',
     }
   }

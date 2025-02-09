@@ -16,6 +16,8 @@ const calculateRemainingTime = () => {
 
 const remainingTime = ref(calculateRemainingTime())
 
+const { $t } = useNuxtApp()
+
 const remainingTimeFormatted = computed(() => {
   const time = remainingTime.value
   const days = Math.floor(time / (1000 * 60 * 60 * 24))
@@ -24,16 +26,16 @@ const remainingTimeFormatted = computed(() => {
   const seconds = Math.floor((time % (1000 * 60)) / 1000)
 
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-    return '¡Gracias a todos!'
+    return $t('global.timer.finished')
   } else if (days === 0 && hours === 0 && minutes === 0) {
-    return `¡Faltan ${seconds} segundos!`
+    return $t('global.timer.seconds').replace('{seconds}', seconds)
   } else if (days === 0 && hours === 0) {
-    return `¡Faltan ${minutes} minutos y ${seconds} segundos!`
+    return $t('global.timer.minutes').replace('{minutes}', minutes).replace('{seconds}', seconds)
   } else if (days === 0) {
-    return `¡Faltan ${hours} horas, ${minutes} minutos y ${seconds} segundos!`
+    return $t('global.timer.hours').replace('{hours}', hours).replace('{minutes}', minutes).replace('{seconds}', seconds)
   }
 
-  return `Faltan ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`
+  return $t('global.timer.days').replace('{days}', days).replace('{hours}', hours).replace('{minutes}', minutes).replace('{seconds}', seconds)
 })
 
 let intervalId

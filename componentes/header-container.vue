@@ -29,8 +29,7 @@ const { $t } = useNuxtApp()
   padding: 1rem 3rem;
 
   h1 {
-    width: max-content;
-    margin: 0 auto;
+    text-align: center;
   }
 
   .header-container-top {
