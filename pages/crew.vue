@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>{{ $t('title.crew') }}</h2>
-    <p></p>
+    <p>{{ $t('default.empty') }}</p>
   </div>
 </template>
 

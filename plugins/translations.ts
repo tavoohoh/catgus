@@ -7,7 +7,7 @@ type Translations = {
 const translations: Translations = {
   en: {
     title: {
-      main: 'Gustavo & Catalina',
+      main: 'Catalina & Gustavo',
       save: 'Save the Date',
       home: 'Home',
       about: 'About',
@@ -21,11 +21,14 @@ const translations: Translations = {
     home: {
       date: 'February 20, 2026',
       location: 'Subachoque, Colombia',
+    },
+    default: {
+      empty: 'We are working on this section. It will be available soon.',
     }
   },
   es: {
     title: {
-      main: 'Gustavo & Catalina',
+      main: 'Catalina & Gustavo',
       save: 'Reserva la Fecha',
       home: 'Home',
       about: 'Información',
@@ -39,6 +42,9 @@ const translations: Translations = {
     home: {
       date: 'Febrero 20, 2026',
       location: 'Subachoque, Cundinamarca',
+    },
+    default: {
+      empty: 'Estamos trabajando en esta sección. Pronto estará disponible.',
     }
   }
 }

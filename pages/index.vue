@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <div class="flower-one"></div>
-    <div class="flower-two"></div>
+<!--    <div class="flower-one"></div>-->
+<!--    <div class="flower-two"></div>-->
 
     <h2>{{ $t('title.save') }}</h2>
 

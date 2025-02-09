@@ -29,7 +29,7 @@ const dropOpen = ref(false)
 
 const { $t } = useNuxtApp()
 
-const backdrop = useTemplateRef('backdrop')
+const backdrop = ref(null)
 
 const toggleNav = () => {
   if (navOpen.value) {
