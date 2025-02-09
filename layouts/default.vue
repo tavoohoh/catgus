@@ -22,14 +22,17 @@ import HeaderContainer from "~/componentes/header-container.vue";
   grid-template-rows: auto 1fr min-content;
   margin: 0 auto;
   background-color: var(--primary);
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
 
   main {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

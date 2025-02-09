@@ -8,10 +8,10 @@ const translations: Translations = {
   en: {
     title: {
       main: 'Gustavo & Catalina',
-      save: 'Save the Date!',
+      save: 'Save the Date',
       home: 'Home',
       about: 'About',
-      gift: 'Weeding Gift',
+      gift: 'Wedding Gift',
       dress: 'Dress Code',
       crew: 'The Crew',
       todo: 'What to do',
@@ -20,29 +20,32 @@ const translations: Translations = {
     },
     home: {
       date: 'February 20, 2026',
+      location: 'Subachoque, Colombia',
     }
   },
   es: {
     title: {
       main: 'Gustavo & Catalina',
-      save: '¡Reserva la Fecha!',
+      save: 'Reserva la Fecha',
       home: 'Home',
-      about: 'Sobre Nosotros',
-      gift: 'Regalo de Boda',
-      dress: 'Código de Vestimenta',
+      about: 'Información',
+      gift: 'Regalos',
+      dress: 'Vestimenta',
       crew: 'The Crew',
       todo: 'Qué hacer',
-      schedule: 'Horario',
+      schedule: 'Itinerario',
       faq: 'FAQs',
     },
     home: {
       date: 'Febrero 20, 2026',
+      location: 'Subachoque, Cundinamarca',
     }
   }
 }
 
 export default defineNuxtPlugin(() => {
-  let currentLang: keyof Translations = navigator?.language.split('-')[0] as keyof Translations || 'es';
+  // let currentLang: keyof Translations = navigator?.language.split('-')[0] as keyof Translations || 'es';
+  let currentLang: string = 'es';
   let currentTranslations = translations[currentLang];
 
   const t = (key: string): string => {
@@ -55,19 +58,9 @@ export default defineNuxtPlugin(() => {
     }, currentTranslations) as string;
   };
 
-  const setLang = (lang: keyof Translations): void => {
-    if (translations[lang]) {
-      currentLang = lang;
-      currentTranslations = translations[lang];
-    } else {
-      throw new Error(`Language "${lang}" not supported`);
-    }
-  };
-
   return {
     provide: {
       t,
-      setLang,
       currentLang,
     }
   }

@@ -1,12 +1,16 @@
 <template>
   <header class="header-container">
-    <div class="header-container-top">
+    <div class="header-container-top" style="display: none">
       <div>{{ $t('home.date') }}</div>
-      <div>Bogotá, Colombia</div>
+      <div>{{ $t('home.location') }}, Colombia</div>
       <div><footer-hashtag /></div>
     </div>
 
-    <h1 class="header-container-title">{{ $t('title.main') }}</h1>
+    <h1 class="header-container-title">
+      <span class="divider"></span>
+      {{ $t('title.main') }}
+      <span class="divider"></span>
+    </h1>
 
     <header-nav />
   </header>
@@ -23,7 +27,11 @@ const { $t } = useNuxtApp()
 <style scoped lang="css">
 .header-container {
   padding: 1rem 3rem;
-  text-align: center;
+
+  h1 {
+    width: max-content;
+    margin: 0 auto;
+  }
 
   .header-container-top {
     display: grid;

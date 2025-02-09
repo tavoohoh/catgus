@@ -10,11 +10,11 @@
     <div class="header-nav-top">
       <div>{{ $t('title.main') }}</div>
       <div>{{ $t('home.date') }}</div>
-      <div>Bogotá, Colombia</div>
+      <div>{{ $t('home.location') }} <br/>Colombia</div>
     </div>
 
     <div class="header-nav-item" v-for="item in navItems" :key="item.to">
-      <nuxt-link :to="item.to">{{ item.label }}</nuxt-link>
+      <nuxt-link :to="item.to" @click="toggleNav">{{ item.label }}</nuxt-link>
     </div>
   </nav>
 </template>
@@ -72,7 +72,7 @@ const navItems = [
 .header-nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1024px;
+  max-width: 800px;
   margin: 0 auto;
 
   * {
@@ -84,8 +84,6 @@ const navItems = [
   }
 
   .header-nav-item {
-    margin: 0 1rem;
-
     a {
       text-decoration: none;
       color: var(--text-dark);
@@ -177,10 +175,10 @@ const navItems = [
     top: 1rem;
     right: 1rem;
     z-index: 1000;
-    background-color: var(--neutral-light);
+    background-color: var(--secondary);
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
